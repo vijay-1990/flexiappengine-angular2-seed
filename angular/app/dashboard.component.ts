@@ -5,11 +5,9 @@ import { ProjUsers } from './users';
 import { BudgetService } from './budget.service';
 
 //import { Logger } from "angular2-logger/core";
-
 @Component({
   selector: 'dashboard',
-  templateUrl: 'app/dashboard.component.html',
-  styleUrls: ['css/bootstrap.min.css'],
+  templateUrl: './dashboard.component.html',
   providers: [BudgetService]
 })
 

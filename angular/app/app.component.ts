@@ -11,7 +11,6 @@ import { BudgetService } from './budget.service';
   template: `
     <router-outlet></router-outlet>
   `,
-  styleUrls: ['css/bootstrap.min.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [BudgetService]
 })
