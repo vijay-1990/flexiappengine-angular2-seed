@@ -1,0 +1,27 @@
+<h3>Projects Summary</h3>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Project User Email ID</th>
+        <th>Project Name</th>
+        <th>From Date</th>
+        <th>To Date</th>
+        <th>Resource Name</th>
+        <th>Resource Cost</th>
+        <th>Resource Usage (in Hours)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="projusers">
+        <td>{{projusers.users}}</td>
+        <td>{{projusers.projectName}}</td>
+        <td>{{projusers.fromDate}}</td>
+        <td>{{projusers.toDate}}</td>
+        <div *ngFor="let resource of projusers.resCost">
+            <td>{{resource.resourceName}}</td>
+            <td>{{resource.cost}}</td>
+            <td>{{resource.usageInHours}}</td>
+        </div>
+      </tr>
+    </tbody>
+</table>

@@ -1,0 +1,7 @@
+runtime: java
+vm: true
+service: default
+handlers:
+- url: /.*
+  script: this field is required, but ignored
+  secure: always

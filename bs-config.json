@@ -1,0 +1,9 @@
+{
+  "port": 8000,
+  "files": [
+    "src/main/webapp/**/*.{html,htm,css,js,ts}"
+  ],
+  "server": {
+    "baseDir": "src/main/webapp/"
+  }
+}
