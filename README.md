@@ -3,6 +3,7 @@ This sample demonstrates how to deploy an application on Google App Engine
 
 ## Running locally
     $ mvn jetty:run
+This runs on localhost:8080
 
 ## Deploying
     $ mvn gcloud:deploy
