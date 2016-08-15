@@ -3,12 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { Projects } from './projects';
 import { BudgetService } from './budget.service';
 import { BarChartComponent } from './bar-chart.component';
+import { PieChartComponent } from './pie-chart.component';
 
 @Component({
   selector: 'project-details',
   templateUrl: './project-details.component.html',
   //styleUrls: ['app/hero-detail.component.css']
-  directives: [BarChartComponent]
+  directives: [BarChartComponent, PieChartComponent]
 })
 export class ProjectDetailsComponent implements OnInit, OnDestroy {
   project: Projects;

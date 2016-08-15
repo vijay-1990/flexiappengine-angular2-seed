@@ -1,17 +1,18 @@
 <div *ngIf="project">
   <h2>{{project.projectName}} details!</h2>
-  <div>
-    <label>id: </label>{{project.projectID}}
+  <div class="row">
+    <div class="col-sm-2">
+    <p><label>id: </label>{{project.projectID}}</p>
+    <p><label>Average Monthly Cost: </label></p>
+    <p><input [(ngModel)]="project.avgMonthlyCost" placeholder="avgMonthlyCost" /><p>
+    <p><label>Trend: </label></p>
+    <p><input [value]="project.trending" placeholder="trending" disabled="true" /></p>
+    </div>
+    <div class="col-sm-8">
+      <piechart></piechart>
+    </div>
   </div>
-  <div>
-    <label>Average Monthly Cost: </label>
-    <input [(ngModel)]="project.avgMonthlyCost" placeholder="avgMonthlyCost" />
-  </div>
-  <div>
-    <label>Trend: </label>
-    <input [value]="project.trending" placeholder="trending" disabled="true" />
-  </div>
-  <div>
+  <div class="row">
     <chart></chart>
   </div>
   <button (click)="goBack()">Back</button>
