@@ -14,12 +14,6 @@ module.exports = {
     filename: "[name].js"
   },
   devtool: 'source-map',
-  devServer: {
-    port: 9090,
-    inline: true,
-    host: 'localhost',
-    historyApiFallback: true
-  },
   module: {
     loaders: [
       {
@@ -65,6 +59,6 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ["", ".js", ".ts", ".html", ".css", ".png", ".woff",".svg"]
+    extensions: ["", ".js", ".ts"]
   }
 }
