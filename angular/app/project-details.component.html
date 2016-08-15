@@ -1,0 +1,18 @@
+<div *ngIf="project">
+  <h2>{{project.projectName}} details!</h2>
+  <div>
+    <label>id: </label>{{project.projectID}}
+  </div>
+  <div>
+    <label>Average Monthly Cost: </label>
+    <input [(ngModel)]="project.avgMonthlyCost" placeholder="avgMonthlyCost" />
+  </div>
+  <div>
+    <label>Trend: </label>
+    <input [value]="project.trending" placeholder="trending" disabled="true" />
+  </div>
+  <div>
+    <chart></chart>
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
