@@ -8,7 +8,7 @@ declare let d3: any;
   directives: [nvD3],
   template: `
     <div>
-      <nvd3 [options]="options" [data]="data"></nvd3>
+      <nvd3 [options]="options" [data]="data" ></nvd3>
     </div>
   `
 })
@@ -36,6 +36,11 @@ export class BarChartComponent implements OnInit{
           bottom: 50,
           left: 55
         },
+        discretebar: { 
+     	 dispatch: {
+      	      elementClick: function (t){alert(t.data.value);}
+      		}
+      	},
         x: function(d){return d.label;},
         y: function(d){return d.value;},
         showValues: true,
@@ -50,7 +55,7 @@ export class BarChartComponent implements OnInit{
           axisLabel: 'Y Axis',
           axisLabelDistance: -10
         }
-      }
+      }      
     };
   
     /*this.data = [
