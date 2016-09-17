@@ -1,3 +1,4 @@
 target/*
 typings/*
 node_modules/*
+src/main/webapp/*
