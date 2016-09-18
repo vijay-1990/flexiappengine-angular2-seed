@@ -1,9 +1,11 @@
-import { provideRouter, RouterConfig }  from '@angular/router';
+//import { provideRouter, RouterConfig }  from '@angular/router';
+import { ModuleWithProviders }  from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us.component';
 import { ContactUsComponent } from './contact-us.component';
 import { DashboardComponent } from './dashboard.component';
 import {ProjectDetailsComponent} from './project-details.component';
-const routes: RouterConfig = [  
+const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
@@ -27,6 +29,4 @@ const routes: RouterConfig = [
   }
 ];
 
-export const APP_ROUTER_PROVIDERS = [
-  provideRouter(routes)
-];
+export const APP_ROUTER_PROVIDERS: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true } );

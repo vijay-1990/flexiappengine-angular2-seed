@@ -5,7 +5,6 @@ declare let d3: any;
 
 @Component({
   selector: 'chart',
-  directives: [nvD3],
   template: `
     <div>
       <nvd3 [options]="options" [data]="data" ></nvd3>

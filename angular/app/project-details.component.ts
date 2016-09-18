@@ -7,9 +7,7 @@ import { PieChartComponent } from './pie-chart.component';
 
 @Component({
   selector: 'project-details',
-  templateUrl: './project-details.component.html',
-  //styleUrls: ['app/hero-detail.component.css']
-  directives: [BarChartComponent, PieChartComponent]
+  templateUrl: './project-details.component.html'
 })
 export class ProjectDetailsComponent implements OnInit, OnDestroy {
   project: Projects;

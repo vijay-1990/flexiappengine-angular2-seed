@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { Projects } from './projects';
 import { BudgetService } from './budget.service';
 
 @Component({
   selector: 'dashboard',
-  templateUrl: './dashboard.component.html',
-  //providers: [BudgetService]
+  templateUrl: './dashboard.component.html'
 })
 
 export class DashboardComponent implements OnInit {
