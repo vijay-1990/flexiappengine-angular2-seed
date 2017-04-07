@@ -18,3 +18,5 @@ This runs on localhost:8080
 	$ gulp clean
 	$ gulp webpack
     $ mvn gcloud:deploy
+
+## Testing it on local
